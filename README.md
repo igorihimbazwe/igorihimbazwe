@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Igor%20Ihimbazwe&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20DevOps%20Advisor%20%7C%205%2B%20Years%20Experience&descSize=20&descAlignY=58" width="100%" alt="Igor Ihimbazwe banner" />
+<img src="./assets/banner.svg" width="100%" alt="Igor Ihimbazwe — Full-Stack Developer banner" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+%7C+5%2B+Years+Experience;Building+scalable+web+applications;DevOps+automation+%26+CI%2FCD+pipelines;Innovating+for+Rwanda's+tech+ecosystem" alt="Typing animation" />
+
 
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://igor-ihimbazwe.netlify.app/)
