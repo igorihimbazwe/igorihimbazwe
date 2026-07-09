@@ -1,10 +1,9 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="Developer coding animation" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Igor%20Ihimbazwe&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20DevOps%20Advisor%20%7C%205%2B%20Years%20Experience&descSize=20&descAlignY=58" width="100%" alt="Igor Ihimbazwe banner" />
 
-# Hi, I'm Igor Ihimbazwe 👋
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+%7C+5%2B+Years+Experience;Building+scalable+web+applications;DevOps+automation+%26+CI%2FCD+pipelines;Innovating+for+Rwanda's+tech+ecosystem" alt="Typing animation" />
 
-**Full-Stack Developer & DevOps Advisor** | Building scalable web apps and cloud solutions for Rwanda's tech ecosystem
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://igor-ihimbazwe.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ihimbazwe-igor-1b161428a)
@@ -15,13 +14,24 @@
 
 ## 💫 About Me
 
+- 👨‍💻 **5+ years of experience** building full-stack web applications and cloud solutions
 - 🔭 Currently building a **Student Tracking System for the University of Rwanda** and **DevPulse**, a DevOps automation and monitoring platform
-- 🏆 **Winner, Umurava Software Skills Challenge (2025)** — recognized for team collaboration and full-cycle product development
-- 💡 Innovator at **UR Binary Hub**, contributing to Rwanda's tech ecosystem
-- 🏥 Built a healthcare web app for **UR Polyclinic**, streamlining patient appointments and hospital workflows
+- ⚡ **2,000+ GitHub contributions in the last year** across 24+ repositories
 - 🌱 Expanding my backend skills with **Python**
 - 💬 Ask me about **JavaScript, TypeScript, React, and DevOps pipelines**
 - 🤝 Open to collaborating on web projects and open-source work
+
+---
+
+## 💼 Experience & Organizations
+
+| Organization | Role & Impact |
+|--------------|---------------|
+| **Binary Hub Rwanda** ([@binaryhubrw](https://github.com/binaryhubrw)) | Innovator & developer — building INUMA, the University of Rwanda's request flow management system (backend contributor on `inuma_bn`) |
+| **Creativa Poeta Ltd** ([@creativaPoetaLtd](https://github.com/creativaPoetaLtd)) | Software developer — designing and implementing scalable software solutions for creative projects (`que_code_fn`) |
+| **EdTech Solutions Rwanda** | Developer — contributing to education technology products |
+| **UR-Holdings Group Ltd** | Built the UR Polyclinic healthcare web application, streamlining patient appointments and hospital workflows |
+| **Andela (ATLP)** | Completed the Technical Leadership Program — shipped team products with professional Git workflows, code review, and CI/CD |
 
 ---
 
@@ -70,14 +80,28 @@
 
 ---
 
-## 📊 GitHub Stats
+## 🏅 Achievements & Community
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=igorihimbazwe&theme=dark&hide_border=true&include_all_commits=true" alt="GitHub stats" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorihimbazwe&theme=dark&hide_border=true&layout=compact" alt="Top languages" />
-</p>
+<div align="left">
+
+- 🥇 **Winner — Umurava Software Skills Challenge (2025)**: recognized for innovative problem-solving and full-cycle product development in a team setting
+- 💡 **Innovator — UR Binary Hub**: building software solutions that address local challenges within Rwanda's tech ecosystem
+- 🎓 **Andela Technical Leadership Program (ATLP)**: professional developer training — shipped team products using Git workflows, code review, and CI/CD
+- 🧑‍🏫 **Hackathon leadership**: led initiatives where students built solutions for social impact
+
+</div>
+
+---
+
+## 📈 Currently
+
+<div align="left">
+
+- 🏗️ Shipping the **UR Student Tracking System** and **DevPulse**
+- 🌱 Deepening my **Python** and cloud deployment skills
+- 🎯 Goal: contribute to production systems at scale — open to full-time roles, internships, and freelance work
+
+</div>
 
 ---
 
