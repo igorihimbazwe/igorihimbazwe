@@ -1,0 +1,209 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#36bcf7"/>
+      <stop offset="100%" stop-color="#7cf29c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#36bcf7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#36bcf7" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="avatarClip"><circle cx="0" cy="0" r="78"/></clipPath>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="300" fill="url(#bg)"/>
+
+  <!-- Twinkling stars -->
+  <g fill="#ffffff">
+    <circle cx="420" cy="16" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="24" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="14" r="1.8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="975" cy="60" r="1.4"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="284" r="1.5"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="280" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Shooting star (single zero-begin loop with built-in pause) -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="46" y2="14" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="1000 8; 380 120; 380 120" keyTimes="0;0.18;1" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.09;0.18;1" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#7cf29c" opacity="0.5">
+    <circle cx="110" cy="250" r="2.5"><animate attributeName="cy" values="290;-10" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.7;0" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="255" cy="210" r="2"><animate attributeName="cy" values="305;-10" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0" dur="12s" repeatCount="indefinite"/></circle>
+    <circle cx="978" cy="240" r="2"><animate attributeName="cy" values="305;-10" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0" dur="11s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ============ ANIMATED DEVELOPER IN A CIRCLE (left) ============ -->
+  <g transform="translate(150,150)">
+    <circle r="105" fill="url(#glow)">
+      <animate attributeName="r" values="98;112;98" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- pulsing rings -->
+    <circle r="82" fill="none" stroke="#36bcf7" stroke-width="2" opacity="0.8">
+      <animate attributeName="r" values="82;89;96" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.4;0" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="89" fill="none" stroke="#7cf29c" stroke-width="2" opacity="0.4">
+      <animate attributeName="r" values="89;96;82" keyTimes="0;0.5;0.5001" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0;0.8;0.4" keyTimes="0;0.5;0.5001;0.5002;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- circle frame -->
+    <circle r="78" fill="#12232b" stroke="url(#accent)" stroke-width="3"/>
+
+    <!-- dashed rotating ring -->
+    <circle r="88" fill="none" stroke="#36bcf7" stroke-width="1.5" stroke-dasharray="6 10" opacity="0.55">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- orbiting code symbols -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+      <g transform="translate(0,-102)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="12s" repeatCount="indefinite"/>
+          <text text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-weight="bold" font-size="16" fill="#7cf29c">&lt;/&gt;</text>
+        </g>
+      </g>
+      <g transform="translate(0,102)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="12s" repeatCount="indefinite"/>
+          <text text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#36bcf7">{ }</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- the human, clipped inside the circle -->
+    <g clip-path="url(#avatarClip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 2; 0 0" dur="3.4s" repeatCount="indefinite"/>
+
+        <!-- torso / hoodie -->
+        <path d="M -34 78 Q -34 30 0 30 Q 34 30 34 78 Z" fill="#2a9fd4"/>
+        <path d="M -14 34 Q 0 44 14 34 L 10 30 Q 0 36 -10 30 Z" fill="#12232b"/>
+
+        <!-- head -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-2 0 16; 2 0 16; -2 0 16" dur="3.4s" repeatCount="indefinite"/>
+          <circle cx="0" cy="4" r="20" fill="#8d5524"/>
+          <path d="M -20 2 Q -20 -18 0 -17 Q 20 -18 20 2 Q 20 -6 12 -8 Q 2 -12 -10 -8 Q -20 -5 -20 2 Z" fill="#141414"/>
+          <circle cx="-7" cy="4" r="2.4" fill="#141414"/>
+          <circle cx="7" cy="4" r="2.4" fill="#141414"/>
+          <rect x="-10.5" y="0.5" width="7" height="7" rx="3" fill="#8d5524" opacity="0">
+            <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.44;0.48;0.52;1" dur="4.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="3.5" y="0.5" width="7" height="7" rx="3" fill="#8d5524" opacity="0">
+            <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.44;0.48;0.52;1" dur="4.5s" repeatCount="indefinite"/>
+          </rect>
+          <path d="M -6 12 Q 0 16 6 12" stroke="#141414" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M -21 2 Q -21 -20 0 -20 Q 21 -20 21 2" stroke="#7cf29c" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="-25" y="-2" width="7" height="12" rx="3" fill="#7cf29c"/>
+          <rect x="18" y="-2" width="7" height="12" rx="3" fill="#7cf29c"/>
+        </g>
+
+        <!-- laptop -->
+        <g transform="translate(0,58)">
+          <rect x="-30" y="-16" width="60" height="20" rx="3" fill="#1b2b33" stroke="#36bcf7" stroke-width="1.5"/>
+          <g stroke-linecap="round" stroke-width="2.6">
+            <line x1="-24" y1="-10" x2="-24" y2="-10" stroke="#7cf29c">
+              <animate attributeName="x2" values="-24;-4;-4;-24" keyTimes="0;0.3;0.9;1" dur="5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="-24" y1="-5" x2="-24" y2="-5" stroke="#36bcf7">
+              <animate attributeName="x2" values="-24;-24;14;14;-24" keyTimes="0;0.3;0.6;0.9;1" dur="5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="-24" y1="0" x2="-24" y2="0" stroke="#f7d774">
+              <animate attributeName="x2" values="-24;-24;-24;6;6;-24" keyTimes="0;0.3;0.6;0.85;0.9;1" dur="5s" repeatCount="indefinite"/>
+            </line>
+          </g>
+          <rect x="8" y="-12" width="2.6" height="6" fill="#7cf29c">
+            <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="-34" y="4" width="68" height="5" rx="2.5" fill="#25404d"/>
+        </g>
+
+        <!-- typing hands -->
+        <circle cx="-16" cy="62" r="5.5" fill="#8d5524">
+          <animate attributeName="cy" values="62;58;62" dur="0.45s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="16" cy="62" r="5.5" fill="#8d5524">
+          <animate attributeName="cy" values="58;62;58" dur="0.45s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ TERMINAL CARD (right) ============ -->
+  <g filter="url(#cardShadow)">
+    <rect x="290" y="34" width="670" height="232" rx="14" fill="#0d1b22" stroke="url(#accent)" stroke-width="1.5" opacity="0.97"/>
+  </g>
+
+  <!-- window controls -->
+  <circle cx="316" cy="56" r="5.5" fill="#ff5f57"/>
+  <circle cx="336" cy="56" r="5.5" fill="#febc2e"/>
+  <circle cx="356" cy="56" r="5.5" fill="#28c840"/>
+  <text x="640" y="61" text-anchor="middle" font-family="monospace" font-size="13" fill="#5f8494">igor@ihimbazwe: ~/building-the-future</text>
+  <line x1="290" y1="74" x2="960" y2="74" stroke="#1e3440" stroke-width="1.5"/>
+
+  <!-- $ whoami -->
+  <text x="316" y="102" font-family="monospace" font-size="15" fill="#9fd8ef" opacity="0">
+    $ whoami
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.3;1" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- BIG NAME -->
+  <text x="316" y="150" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="1" opacity="0">
+    Igor Ihimbazwe
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.45;1" dur="2s" fill="freeze"/>
+  </text>
+  <rect x="316" y="162" height="4" rx="2" fill="url(#accent)" width="0">
+    <animate attributeName="width" values="0;0;336" keyTimes="0;0.55;1" dur="2.6s" fill="freeze"/>
+  </rect>
+
+  <!-- subtitle -->
+  <text x="316" y="192" font-size="17" font-weight="600" fill="#9fd8ef" opacity="0">
+    Full-Stack Developer  |  DevOps Advisor  |  5+ Years Experience
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="3s" fill="freeze"/>
+  </text>
+
+  <!-- cycling status line: all begin at 0s, phase-shifted by keyTimes (renderer-proof) -->
+  <g font-family="monospace" font-size="15">
+    <text x="316" y="218" fill="#7cf29c" opacity="1">
+      &gt; Building scalable web applications
+      <animate attributeName="opacity" values="1;1;0;0;0;0;1;1" keyTimes="0;0.29;0.33;0.37;0.92;0.96;0.99;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="316" y="218" fill="#7cf29c" opacity="0">
+      &gt; Automating DevOps and CI/CD pipelines
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.37;0.62;0.66;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="316" y="218" fill="#7cf29c" opacity="0">
+      &gt; Innovating for Rwanda's tech ecosystem
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.62;0.66;0.92;0.96;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- achievement pills -->
+  <g transform="translate(316,230)" font-size="13" font-weight="600">
+    <rect x="0" y="0" width="178" height="26" rx="13" fill="#36bcf7" opacity="0.14" stroke="#36bcf7" stroke-width="1"/>
+    <text x="89" y="17.5" text-anchor="middle" fill="#9fd8ef">2,000+ commits / year</text>
+
+    <rect x="194" y="0" width="182" height="26" rx="13" fill="#7cf29c" opacity="0.14" stroke="#7cf29c" stroke-width="1"/>
+    <text x="285" y="17.5" text-anchor="middle" fill="#bdf2cd">Umurava Winner 2025</text>
+
+    <rect x="392" y="0" width="140" height="26" rx="13" fill="#f7d774" opacity="0.11" stroke="#f7d774" stroke-width="1"/>
+    <text x="462" y="17.5" text-anchor="middle" fill="#f3e3ae">UR Binary Hub</text>
+  </g>
+</svg>
